@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Resume Maker</title>
+</head>
+<body>
+    <div id="cv-form">
+    <h2 class="mx-5" style="color: aliceblue;">Resume Maker</h2>
+    <hr style="color: aliceblue;">
+        <h1 class="text-center hed">Personal details</h1>
+
+        <div class="container">
+           <div class="row my-5">
+               <div class="col-md"></div>
+               <div class="col-md-10 card d-flex align-items-stretch shadow p-3 mb-5 bg-white rounded">
+                   <div class="container">
+                       <h5 style="font-weight: 700;">Personal details</h5>
+                   </div>
+                   <hr>
+                
+                   <div class="row">
+                       <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Your name*</label>
+                            <input type="text" id="nameField" placeholder="Enter here" class="form-control">
+                        </div>
+                    </div>
+                       <div class="col-md-7">
+                        <div class="form-group mt-2">
+                            <label for="Contact">Your Contact</label>
+                            <input type="text" id="contactField" placeholder="Enter here" class="form-control">
+                        </div>
+                       </div>
+                       <div class="form-group mt-2">
+                        <label for="address">Your Address</label>
+                        <textarea id="addressField" placeholder="Enter here" class="form-control" rows="3"></textarea>
+                    </div>
+                    <p class="text-secondary my-2">Important Links</p>
+                <div class="form-group">
+                    <label for="facebookField">Facebook</label>
+                    <input type="text" id="facebookField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="intaField">Instagram</label>
+                    <input type="text" id="intaField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="linkedField">LinkedIn</label>
+                    <input type="text" id="linkedField" placeholder="Enter here" class="form-control">
+                </div>
+                   </div>
+                
+                </div>
+               <div class="col-md"></div>
+
+           </div>
+           <h1 class="text-center hed2">Professional details</h1>
+           <div class="row my-5">
+            <div class="col-md"></div>
+            <div class="col-md-10 card d-flex align-items-stretch shadow p-3 mb-5 bg-white rounded">
+                <div class="container">
+                    <h5 style="font-weight: 700;">Professional details</h5>
+                </div>
+                <hr>
+             
+                <div class="row">
+                    <div class="col">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne" style="
+                              border: 1px rgb(224, 224, 224) solid;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  Objective
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="form-group mt-2">
+                                        <label for="">Objective</label>
+                                        <textarea placeholder="Enter here" class="form-control" rows="4" id="ObjectiveField"></textarea>
+                                    </div>
+                                </div>
+                              </div>    
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo" style="
+                            border: 1px rgb(224, 224, 224) solid;">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Work Experience
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <div class="form-group mt-2" id="we">
+                                    <label for="">Work Experience</label>
+                                    <textarea placeholder="Enter here" class="form-control weField" rows="3"></textarea>
+                                
+                                <div class="container text-center mt-2" id="weAddButon">
+                                    <button onclick= "addnewWEField()"class="btn btn-dark">Add</button>
+                                </div>
+                                </div>
+                              </div>
+                            </div>    
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree" style="
+                            border: 1px rgb(224, 224, 224) solid;">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Academic Qualification
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <div class="form-group mt-2" id="aq">
+                                    <label for="">Academic Qualification</label>
+                                    <textarea placeholder="Enter here" class="form-control aqField" rows="3"></textarea>
+                                
+                                <div class="container text-center mt-2" id="aqAddButon">
+                                    <button onclick="addnewAQField()"class="btn btn-dark">Add</button>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+             
+             </div>
+            <div class="col-md"></div>
+
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick= "generateCV()"class="btn btn-dark btn-lg">Generate CV</button>   
+           </div>
+        </div>
+    </div> 
+    <div class="container"id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+                <!-- first column -->
+                <img src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="profile-image" class="img-fluid my-img">
+                <div class="container">
+                    <p id="nameT1">Janvi Chauhan</p>
+                    <p id="contactT">+911234567890</p>
+                    <p id="addressT">nanpura, gopipura, surat, Gujarat, India </p>
+                </div>
+                <hr />
+                <p id="fbT"><a href="#">www.facebook.com/janvi</a></p>
+                <p id="inT"><a href="#">www.instagram.com/janvi</a></p>
+                <p id="lnT"><a href="#">www.linkedin.com/janvi</a></p>
+    
+            </div>
+            <div class="col-md-8 py-5 ">
+                <!-- second column -->
+                <h1 id="nameT2"class="text-center" style="font-weight:900">Janvi Chauhan</h1>
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur nobis ipsa facere. Odit nobis voluptate maiores neque animi dignissimos cumque beatae veritatis vero, sequi repellat impedit, quae aperiam, sit magni. Odit ad, explicabo sunt obcaecati optio alias ipsa asperiores voluptatum rerum, consequatur similique molestiae autem error sit itaque. Commodi, error?</p>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, perferendis?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</li>     
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, perferendis?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</li>     
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+    <div class="container mt-3 text-center" id="dow">
+
+        <button id="btn" class="btn btn-dark">Download CV</button>
+</div>
+
+    <div id="previewImage" style="display: none;">
+    </div>      
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                domtoimage.toBlob(document.getElementById('cv-template')).then(function(blob){
+                    window.saveAs(blob,"cv.png")
+                })
+            })
+        })
+    </script>
+</body>
+</html>
